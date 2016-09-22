@@ -14,6 +14,8 @@
 		910E3A011C4FA99A00F8D886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 910E39FF1C4FA99A00F8D886 /* LaunchScreen.storyboard */; };
 		910E3A0C1C4FA99A00F8D886 /* Retro_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E3A0B1C4FA99A00F8D886 /* Retro_CalculatorTests.swift */; };
 		910E3A171C4FA99A00F8D886 /* Retro_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E3A161C4FA99A00F8D886 /* Retro_CalculatorUITests.swift */; };
+		910E3A251C5106CF00F8D886 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 910E3A241C5106CF00F8D886 /* Minecraft.ttf */; };
+		91BA61701C54B6FD00250EA8 /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 91BA616F1C54B6FD00250EA8 /* btn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		910E3A121C4FA99A00F8D886 /* Retro CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Retro CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		910E3A161C4FA99A00F8D886 /* Retro_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Retro_CalculatorUITests.swift; sourceTree = "<group>"; };
 		910E3A181C4FA99A00F8D886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		910E3A241C5106CF00F8D886 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
+		91BA616F1C54B6FD00250EA8 /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		910E39F51C4FA99A00F8D886 /* Retro Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				910E3A241C5106CF00F8D886 /* Minecraft.ttf */,
+				91BA616F1C54B6FD00250EA8 /* btn.wav */,
 				910E39F61C4FA99A00F8D886 /* AppDelegate.swift */,
 				910E39F81C4FA99A00F8D886 /* ViewController.swift */,
 				910E39FA1C4FA99A00F8D886 /* Main.storyboard */,
@@ -229,8 +235,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91BA61701C54B6FD00250EA8 /* btn.wav in Resources */,
 				910E3A011C4FA99A00F8D886 /* LaunchScreen.storyboard in Resources */,
 				910E39FE1C4FA99A00F8D886 /* Assets.xcassets in Resources */,
+				910E3A251C5106CF00F8D886 /* Minecraft.ttf in Resources */,
 				910E39FC1C4FA99A00F8D886 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +409,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "kt.Retro-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -412,6 +421,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "kt.Retro-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -482,6 +492,7 @@
 				910E3A1D1C4FA99A00F8D886 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		910E3A1E1C4FA99A00F8D886 /* Build configuration list for PBXNativeTarget "Retro CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +501,7 @@
 				910E3A201C4FA99A00F8D886 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		910E3A211C4FA99A00F8D886 /* Build configuration list for PBXNativeTarget "Retro CalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +510,7 @@
 				910E3A231C4FA99A00F8D886 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
