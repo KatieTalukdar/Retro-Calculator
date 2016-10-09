@@ -32,11 +32,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        let path = NSBundle.mainBundle().pathForResource("btn", ofType:"wav")
-        let soundURL = NSURL(fileURLWithPath: path!)
+        let path = Bundle.main.path(forResource: "btn", ofType:"wav")
+        let soundURL = URL(fileURLWithPath: path!)
         
         do {
-      try   btnSound = AVAudioPlayer(contentsOfURL: soundURL)
+      try   btnSound = AVAudioPlayer(contentsOf: soundURL)
             btnSound.prepareToPlay()
 
     } catch let err as NSError {
@@ -44,43 +44,43 @@ class ViewController: UIViewController {
     }
     }
     
-    @IBAction func numPressed(btn : UIButton!){
+    @IBAction func numPressed(_ btn : UIButton!){
         playSound()
         currentNum += "\(btn.tag)"
         answerLabel.text = currentNum
     }
 
-    @IBAction func divideBtn(sender: AnyObject) {
+    @IBAction func divideBtn(_ sender: AnyObject) {
         operationPressed(Operation.Divide)
     }
-    @IBAction func multiplyBtn(sender: AnyObject) {
+    @IBAction func multiplyBtn(_ sender: AnyObject) {
         operationPressed(Operation.Multiply)
     }
-    @IBAction func addBtn(sender: AnyObject) {
+    @IBAction func addBtn(_ sender: AnyObject) {
         operationPressed(Operation.Add)
     }
-    @IBAction func subtractBtn(sender: AnyObject) {
+    @IBAction func subtractBtn(_ sender: AnyObject) {
         operationPressed(Operation.Subtract)
     }
-    @IBAction func equalsBtn(sender: AnyObject) {
+    @IBAction func equalsBtn(_ sender: AnyObject) {
         operationPressed(currentOperation)
         
     }
-    @IBAction func clearBtn(sender: AnyObject) {
+    @IBAction func clearBtn(_ sender: AnyObject) {
         playSound()
         currentNum = ""
         currentOperation = Operation.Empty
         answerLabel.text = ""
     }
     func playSound(){
-        if btnSound.playing{
+        if btnSound.isPlaying{
             btnSound.stop()
            
         }
          btnSound.play()
     }
     
-    func operationPressed(op:Operation){
+    func operationPressed(_ op:Operation){
          playSound()
         if currentOperation != Operation.Empty{
             if currentNum != "" {
